@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env UMI_ENV=dev umi dev",
+    "start:prod": "cross-env UMI_ENV=prod umi dev",
+    "dev": "cross-env UMI_ENV=dev umi dev",
+    "build:dev": "node command.js && cross-env UMI_ENV=dev umi build",
+    "build:test": "node command.js && cross-env UMI_ENV=test umi build",
+    "build:uat": "node command.js && cross-env UMI_ENV=uat umi build",
+    "build:prod": "node command.js && cross-env UMI_ENV=prod umi build",
+    "build": "node command.js && cross-env UMI_ENV=prod umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dingtalk-jsapi": "^2.13.23",
+    "js-cookie": "^2.2.1",
+    "rc-form": "^2.4.12",
+    "rc-tween-one": "^2.7.3",
+    "react-intl-universal": "^2.4.5",
+    "react-sticky": "^6.0.3",
+    "umi": "^3.4.10",
+    "vconsole": "^3.9.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/plugin-antd": "^0.9.1",
+    "@umijs/test": "^3.4.10",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^10.0.7",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^2.2.0",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
