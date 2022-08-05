@@ -1,0 +1,463 @@
+.bonus {
+  background: url(../../assest/css_sprites.png) -15750px 0 no-repeat;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Arial,
+    sans-serif;
+  background-size: 1px 1px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .user {
+    height: 200px;
+    width: 100%;
+    margin: 24px;
+    display: flex;
+    .avatar {
+      margin-top: 40px;
+      margin-left: 12px;
+      height: 120px;
+      width: 120px;
+      border-radius: 60px;
+    }
+    .info {
+      margin-top: 60px;
+      margin-left: 24px;
+      .name {
+        font-size: 38px;
+        color: #ffffff;
+      }
+      .no {
+        margin-top: 12px;
+        font-size: 28px;
+        color: #ffffff;
+      }
+    }
+    .lang {
+      margin-top: 60px;
+      width: 72px;
+      height: 54px;
+      padding: 0px 36px 12px 12px;
+      margin-left: auto;
+      img {
+        width: 48px;
+      }
+    }
+  }
+  .sectionTitle {
+    width: 450px;
+    height: 92px;
+    line-height: 92px;
+    background-image: url(https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/title_bg.png);
+    background-size: 450px 92px;
+    background-repeat: no-repeat;
+    font-size: 34px;
+    color: #513511;
+    padding-left: 40px;
+    margin-bottom: 36px;
+  }
+  .formula {
+    margin: 24px;
+    padding-bottom: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    .title {
+      margin: 24px 0px 24px 24px;
+    }
+    > img {
+      margin-left: 26px;
+      width: 642px;
+    }
+  }
+  .form {
+    margin: 24px;
+    padding-bottom: 32px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    .personal {
+      display: flex;
+      height: 110px;
+      margin: 32px;
+      border-radius: 8px;
+      color: #000000;
+      font-size: 34px;
+      background-color: #f8f8f8;
+      overflow: hidden;
+      align-items: center;
+      padding-right: 32px;
+      .result {
+        color: #333333;
+        font-size: 30px;
+      }
+    }
+    .label {
+      flex: 1 1;
+      align-items: center;
+    }
+    .itemValue {
+      font-size: 30px;
+      color: #333333;
+      // width: 160px;
+      text-align: right;
+      flex: initial;
+    }
+    .itemValue2 {
+      // width: 330px;
+      // max-width: 330px;
+      // overflow: hidden;
+      height: 40px;
+      > div {
+        display: inline-block;
+      }
+    }
+    .gray {
+      align-items: center;
+    }
+    .gray::before {
+      background-color: #d0d2d6;
+    }
+    .kpis {
+      background-color: #fbf6f7;
+      margin: 32px;
+      border-radius: 8px;
+      align-items: center;
+      .kpiItemTitle {
+        height: 80px;
+        border-bottom: 1px solid #f5f0f1;
+        padding: 0px 34px;
+        position: relative;
+        display: flex;
+        flex: 1 1;
+        align-self: stretch;
+        overflow: hidden;
+        align-items: center;
+        .name {
+          flex: 1 1;
+        }
+        .weight {
+          width: 100px;
+        }
+        .achievement {
+          width: 142px;
+          text-align: center;
+        }
+      }
+      .kpiItem {
+        padding: 20px 34px;
+        position: relative;
+        display: flex;
+        flex: 1 1;
+        align-self: stretch;
+        overflow: hidden;
+        align-items: center;
+        .name {
+          flex: 1 1;
+        }
+        .weight {
+          width: 100px;
+        }
+        .achievement {
+          width: 142px;
+          > button {
+            border: none;
+            background-color: #f4e7e9;
+            width: 132px;
+            height: 56px;
+            border-radius: 28px;
+            text-align: left;
+            padding-left: 20px;
+            > img {
+              margin-bottom: 2px;
+              width: 20px;
+              position: absolute;
+              right: 64px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .kpis::after {
+      content: '';
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid #fbf6f7;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      float: right;
+      // margin-bottom: 20px;
+      margin-right: 60px;
+    }
+  }
+  .bottom {
+    margin: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    .result {
+      height: 390px;
+      background: linear-gradient(to top, #f9f3e8, #ffffff);
+      border-radius: 8px;
+      .gross {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        > div {
+          display: flex;
+          align-items: center;
+          > img {
+            width: 44px;
+            height: 44px;
+            margin-right: 16px;
+          }
+          > span {
+            color: #6c717d;
+            font-size: 32px;
+          }
+        }
+      }
+      .count {
+        margin-top: 22px;
+        color: #14172f;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .num {
+          font-size: 90px;
+          font-weight: 800;
+          font-family: 'DIN Alternate';
+          margin-right: 8px;
+          > div {
+            display: inline-block;
+          }
+        }
+        .unit {
+          font-size: 32px;
+        }
+      }
+    }
+    .btn {
+      margin: 52px 52px 10px 52px;
+      background-color: #c8102e;
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: normal;
+    }
+    .tips {
+      padding-top: 20px;
+      margin-bottom: 36px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: #c8102e;
+      font-size: 28px;
+      font-weight: normal;
+    }
+    .animation {
+      position: absolute;
+      width: 750px;
+      height: 512px;
+      margin-left: -24px;
+      top: -280px;
+      z-index: 9999;
+    }
+    @keyframes like-gif {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: -2100vw 0;
+      }
+    }
+    .pause {
+      background: url(../../assest/css_sprites.png) -15750px 0 no-repeat;
+      background-size: 15750px 512px;
+      animation-play-state: paused;
+    }
+    .replay {
+      background: url(../../assest/css_sprites.png) 0 0 no-repeat;
+      animation: like-gif steps(21) 0.8s both;
+      background-size: 15750px 512px;
+    }
+  }
+}
+.bonus::-webkit-scrollbar {
+  display: none;
+}
+
+.inputBlue {
+  background-color: #f8f8f8 !important;
+}
+.inputBlue::before {
+  content: '';
+  width: 8px;
+  height: 100%;
+  background-color: #195ed5;
+  margin-right: 34px;
+}
+
+.inputYellow {
+  background-color: #f8f8f8 !important;
+}
+.inputYellow::before {
+  content: '';
+  width: 8px;
+  height: 100%;
+  background-color: #e4be8b;
+  margin-right: 34px;
+}
+
+.personal::before {
+  content: '';
+  width: 8px;
+  height: 110px;
+  background-color: #c8102e;
+  margin-right: 34px;
+}
+.inputGrey {
+  background-color: #fbf6f7 !important;
+  overflow: visible;
+}
+.inputGrey::before {
+  content: '';
+  height: 110px;
+  margin-right: 34px;
+}
+.inputGrey::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #fbf6f7;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin-top: 65px;
+  position: absolute;
+  right: 60px;
+}
+
+.modalWrap {
+  background-image: url(https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/statement_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: auto;
+  padding: 68px 34px 26px 34px;
+  text-align: left;
+  color: #333333;
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .paragraph {
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-size: 26px;
+  }
+}
+.mpodalClose {
+  margin-top: 60px;
+  background: none;
+  border: none;
+  > img {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+:global {
+  .am-list-item .am-input-extra {
+    color: #333333;
+  }
+  .am-list-item.am-input-item {
+    height: 110px;
+    margin: 32px;
+    border-radius: 8px;
+    padding-left: 0px;
+  }
+
+  .am-number-keyboard-item.keyboard-confirm,
+  .am-number-keyboard-item.keyboard-confirm.am-number-keyboard-item-disabled {
+    background-color: #c8102e !important;
+  }
+
+  .fake-input.focus::after {
+    border-right: 1.5px solid #c8102e !important;
+  }
+  .am-action-sheet {
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+  }
+  .am-action-sheet-button-list-item {
+    text-align: left;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    align-items: center !important;
+    align-content: space-between;
+  }
+  .am-input-label-5 {
+    width: auto !important;
+  }
+  .am-action-sheet-button-list-item::before {
+    height: 0px !important;
+  }
+  .am-action-sheet-destructive-button {
+    color: #c8102e !important;
+    background-color: #f8f8f8;
+  }
+  .am-action-sheet-destructive-button::after {
+    content: ' ';
+    width: 40px;
+    height: 40px;
+    background-image: url(https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-checked.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    position: absolute;
+    right: 24px;
+  }
+
+  .am-modal-transparent {
+    width: 620px;
+  }
+  .am-list-line::after {
+    background-color: transparent !important;
+  }
+  .am-list-item .am-input-control input {
+    font-size: 34px;
+    color: #333;
+    text-align: right;
+  }
+}
+
+.error {
+  margin: 10px auto;
+  width: 88px;
+  height: 88px;
+  background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -10px -10px
+    no-repeat;
+  background-size: 216px 108px;
+  .bg1 {
+    background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -10px -10px
+      no-repeat;
+  }
+  .bg2 {
+    background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -118px -10px
+      no-repeat;
+  }
+}
+.inputDes {
+  font-size: 22px;
+  color: #666666;
+  margin-top: 8px;
+}

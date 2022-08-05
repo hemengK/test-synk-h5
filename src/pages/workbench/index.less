@@ -1,0 +1,82 @@
+.wrapper {
+  // background-color: #f4f4f4;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Arial,
+    sans-serif;
+  .bg {
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .user {
+    padding: 24px;
+    margin-top: 60px;
+  }
+  .search {
+    margin-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: transparent;
+  }
+  .catagories {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    .catagory {
+      border-radius: 16px;
+      padding: 0 16px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+:global {
+  .am-search-input {
+    height: 74px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    .am-search-synthetic-ph {
+      margin-top: 10px;
+    }
+    .am-search-value {
+      margin-top: 10px;
+      color: #666666 !important;
+    }
+    .am-search-clear {
+      margin-top: 10px;
+    }
+  }
+  .am-search-cancel-show,
+  .am-search-cancel {
+    color: #ffffff;
+    display: none;
+  }
+  .am-list-body {
+    background-color: transparent;
+  }
+  .am-list-body::before {
+    content: none !important;
+  }
+  .am-list-body::after {
+    content: none !important;
+  }
+}
+
+.error {
+  margin: 10px auto;
+  width: 88px;
+  height: 88px;
+  background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -10px -10px
+    no-repeat;
+  background-size: 216px 108px;
+  .bg1 {
+    background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -10px -10px
+      no-repeat;
+  }
+  .bg2 {
+    background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/bonus/icon-error.png') -118px -10px
+      no-repeat;
+  }
+}

@@ -1,0 +1,112 @@
+.catagory {
+  height: auto;
+  border-radius: 16px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  .header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    .title {
+      line-height: 100px;
+      color: #2c2a2d;
+      font-weight: 600;
+      font-size: 34px;
+      border: none;
+      flex-grow: 1;
+    }
+    .editBtn {
+      width: 120px;
+      height: 54px;
+      border-radius: 27px;
+      line-height: 52px;
+      color: #d01533;
+      font-size: 30px;
+      border: 2px solid #d01533;
+      display: block;
+    }
+    .editBtn::before {
+      border: none;
+    }
+    .done {
+      border: 2px solid #d01533;
+      color: #ffffff;
+      background-color: #d01533;
+    }
+    .arrow {
+      padding: 20px 0px 20px 20px;
+      img {
+        width: 32px;
+      }
+      .up {
+        transform: rotate(360deg);
+        transition: transform 0.6s;
+      }
+      .down {
+        transform: rotate(180deg);
+        transition: transform 0.6s;
+      }
+    }
+  }
+}
+.editFavourite {
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 8px #ccc;
+  z-index: 9;
+}
+.item {
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+  .name {
+    text-align: center;
+    color: #888;
+    font-size: 26px;
+    width: 90%;
+    margin: 0px;
+    margin-left: 5%;
+    height: auto;
+  }
+  .icon {
+    width: 36px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 12px;
+  }
+}
+.open {
+  max-height: 1624px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.close {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+:global {
+  .am-flexbox-item.am-grid-item-active .am-grid-item-content {
+    background-color: transparent !important;
+  }
+  .am-grid-item-content {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content {
+    padding-top: 20px !important;
+  }
+}
+
+.error {
+  margin: 10px auto;
+  width: 88px;
+  height: 88px;
+  background: url('https://abi-static-resource.oss-cn-shanghai.aliyuncs.com/ipeople/workbench/icon_tips.png')
+    0px 0px no-repeat;
+  background-size: 88px 88px;
+}
