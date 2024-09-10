@@ -33,7 +33,7 @@
     "rc-tween-one": "^2.7.3",
     "react-intl-universal": "^2.4.5",
     "react-sticky": "^6.0.3",
-    "umi": "^3.4.10",
+    "umi": "^4.0.0",
     "vconsole": "^3.9.1"
   },
   "devDependencies": {
